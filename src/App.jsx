@@ -7,7 +7,7 @@ function App() {
     <>
       <div className="container mx-auto px-4 py-8">
         <h1 className="text-3xl font-semibold mb-4 text-green-500">Task Manager</h1>
-        <div className="w-[600px] m-auto border border-">
+        <div className="w-[600px] m-auto">
           <TaskForm />
         </div>
       </div>

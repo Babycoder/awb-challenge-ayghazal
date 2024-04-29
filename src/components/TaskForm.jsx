@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { useState } from 'react';
 const TaskForm = () => {
   const [title, setTitle] = useState('');
@@ -24,7 +24,7 @@ const TaskForm = () => {
           <input
             type="text"
             id="title"
-            className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+            className="h-8 mt-1 block w-full border-gray-300 rounded-md shadow-sm sm:text-sm"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
             required
@@ -39,7 +39,7 @@ const TaskForm = () => {
           </label>
           <textarea
             id="description"
-            className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+            className="h-40 mt-1 block w-full border-gray-300 rounded-md shadow-sm sm:text-sm "
             rows="3"
             value={description}
             onChange={(e) => setDescription(e.target.value)}
@@ -56,7 +56,7 @@ const TaskForm = () => {
           <input
             type="date"
             id="dueDate"
-            className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+            className="h-8 mt-1 block w-full border-gray-300 rounded-md shadow-smsm:text-sm"
             value={dueDate}
             onChange={(e) => setDueDate(e.target.value)}
             required
@@ -71,7 +71,7 @@ const TaskForm = () => {
           </label>
           <select
             id="status"
-            className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+            className="h-8 mt-1 block w-full border-gray-300 rounded-md shadow-s sm:text-sm"
             value={status}
             onChange={(e) => setStatus(e.target.value)}
             required
